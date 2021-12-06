@@ -1,0 +1,402 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* Colors */
+:root {
+  --dark:#151A33;
+  --primery:#1a253f;
+  --info:#4d79f6;
+  --secondery:#2b55cc;
+  --fade:#7081b9;
+  --mild:#8997bd;
+  --secondary:#2b55cc;
+  --footer:#121A4A;
+  --dark-blue:#28365f;
+}
+
+/* reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color:var(--dark);
+  -webkit-font-smoothing:antialased;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  line-height:1;
+}
+
+.container{
+  max-width:1140px;
+  margin:0 auto;
+}
+
+nav{
+  background-color:var(--primery);
+  padding:1.6rem 0;
+}
+
+nav .inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+nav .inner .logo{
+  text-transform:uppercase;
+  color:white;
+  font-size:18px;
+  letter-spacing:1px;
+  font-weight:500;
+}
+
+nav .inner .logo i{
+  color:var(--info);
+}
+
+nav .inner button {
+  background-color:var(--secondery);
+  color:white;
+  border:none;
+  padding:0.6rem 1rem;
+  font-size:14px;
+  border-radius:4px;
+}
+
+main{
+  background-color:var(--primery);
+  margin:10px;
+}
+
+.profile {
+  background-color:black;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:3rem;
+  margin-top:60px;
+  padding-bottom:60px;
+  clip-path:polygon(0 0 , 100% 0 , 100% 80%, 25% 100% , 0 80%);
+}
+
+.profile .left {
+  flex:2;
+  display:flex;
+  flex-direction: column;
+}
+
+.profile .right {
+  flex:1;
+}
+
+.profile .left h2{
+  color:var(--fade);
+}
+
+.profile .left p{
+  color:var(--mild);
+}
+
+.profile .right .contact li{
+  color:var(--fade);
+  list-style:none;
+}
+
+.profile .right .contact li i{
+  color:var(--mild);
+}
+
+.profile .right .contact li strong{
+  color:var(--mild);
+  margin-left:5px;
+}
+
+/*about section*/
+
+.about {
+  display:flex;
+  justify-content:space-between;
+  background-color:var(--primery);
+  padding:3rem;
+}
+
+.title {
+  color:white;
+  font-size:1.6rem;
+  margin-bottom:10px;
+}
+
+.title h3{
+  font-size:1.6rem;
+  margin-bottom:10px;
+}
+
+.title p{
+  border:2px solid red;
+  height:2px;
+  width:110px;
+  margin-bottom:10px;
+}
+
+.about .left {
+  color:white;
+  width:450px;
+}
+
+.about .left .info h2{
+  font-size:1.6rem;
+  margin-bottom:10px;
+  color:var(--info);
+}
+
+.about .left .info p{
+  color:var(--fade);
+}
+
+.about .right {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  color:var(--mild);
+}
+
+.about .right .td{
+  padding:5px 10px;
+}
+
+/*skill section*/
+.skill {
+  padding:3rem;
+}
+
+.skill .mean{
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns:1fr 1fr 2fr;
+}
+
+.skill .mean .left .heading{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:80px;
+  flex-direction: column;
+  margin-top:10px;
+  margin-bottom:35px;
+}
+
+.skill .mean .left .heading i {
+  font-size:3rem;
+  color:var(--fade);
+  margin-bottom:20px;
+}
+
+.skill .mean .left .heading h4{
+  color:var(--mild);
+  font-size:1rem;
+}
+
+.skill .mean .details{
+  display:flex;
+}
+
+.skill .mean .details .right{
+  position:relative;
+  z-index:2;
+  left:-14px;
+}
+
+.skill .mean .details .right .item{
+  display:flex;
+}
+
+.skill .mean .details .line {
+  background-color:var(--dark-blue);
+  height:320px;
+  width:3px;
+}
+
+.skill .mean .details .icon {
+  background-color:var(--dark-blue);
+  height:15px;
+  width:15px;
+  border-radius:100%;
+  border:3px solid var(--secondery);
+  margin:5px;
+}
+
+.skill .mean .details .right .para{
+  margin-left:15px;
+}
+
+.skill .mean .details .right p{
+  color:var(--fade);
+  margin-bottom:30px;
+}
+
+
+/* programsbar */
+
+.skill .mean .right-bar {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.skill .mean .right-bar section {
+  width:100%;
+  color:var(--mild);
+}
+
+.pBar{
+  margin:10px;
+}
+
+.pBar p{
+  margin-bottom:.5rem !important;
+}
+
+.bar{
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  align-items:center;
+  height:8px;
+  padding:4px;
+  border-radius:5px;
+  position:relative;
+  border:.5px solid var(--fade);
+}
+
+.bar p{
+  position:absolute;
+  bottom:6px;
+  right: 0px;
+}
+.barL{
+  width:70%;
+  height:3px;
+  border-radius:5px;
+  background-color:var(--secondery);
+  position:absolute;
+  left:0;
+}
+
+/* contact */
+
+.contact {
+  padding:3rem;
+}
+
+.contact .mean{
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns:1fr 2fr;
+}
+
+.contact .mean .left {
+  margin-top:15px;
+}
+
+.contact .mean .left .item {
+  display:flex;
+  align-items:center;
+  padding:0 15px;
+  margin-bottom:30px !important;
+}
+
+.contact .mean .left .item i{
+  color:var(--secondery);
+  font-size:2.5rem;
+}
+
+.contact .mean .left .item .info{
+  margin-left:25px;
+}
+
+.contact .mean .left .item .head {
+  color:var(--mild);
+  margin-bottom:15px !important;
+  font-size:1.2rem;
+}
+
+.contact .mean .left .item p{
+  color:var(--fade);
+  margin-bottom:0px !important;
+}
+
+.center {
+  display:flex;
+  justify-content:center;
+}
+
+.contact .mean .right form{
+  flex-direction: column;
+  padding:10px 15px;
+  padding-top:0px ;
+}
+
+.contact .mean .right form label {
+  margin:15px 0;
+}
+
+.contact .mean .right form .top{
+  justify-content:space-between;
+}
+
+.contact .mean .right form .name , .contact .mean .right form .email{
+  flex-direction: column;
+  color:var(--fade);
+}
+
+.contact .mean .right form .top .form-control{
+  width:315px;
+}
+
+@media screen and (max-width: 1080px){
+  .contact .mean .right form .top .form-control{
+    width:270px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .contact .mean .right form .top .form-control{
+    width:250px;
+  }
+}
+
+.contact .mean .right form input,.contact .mean .right form textarea{
+  background:transparent;
+  outline:none;
+  resize:none;
+  border:.5px solid var(--fade);
+  color:var(--fade);
+  padding:8px 20px;
+  
+}
+
+.contact .mean .right form .textbox{
+  flex-direction: column;
+  color:var(--fade);
+}
+
+.contact .mean .right form .btn{
+  background-color:var(--secondery);
+  color:white;
+  border:none;
+  padding:0.6rem 1rem;
+  font-size:14px;
+  border-radius:5px;
+  width:140px;
+  margin:15px 0;
+}
+
+
